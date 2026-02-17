@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minesweeper</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="minesweeper-container">
+      <h1>MINESWEEPER</h1>
+      <table id="grid" class="grid"></table>
+      <span id="message">Flag = 0 / 10</span>
+      <br>
+      <div class="button-container">
+        <button id="search-btn" onclick="searchFlag()">FLAGGING</button>
+        <button id="reset-btn">RESET</button>
+        <a href="index.html"><button id="menu-btn">MAIN MENU</button></a>
+      </div>
+    </div>
+
+    <script src="minesweeper.js"></script>
+    <script src="extension.js"></script>
+  </body>
+</html>

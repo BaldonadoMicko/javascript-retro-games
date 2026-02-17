@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="rock-paper-scissors">
+      <div class="rock-paper-scissors-title">
+        <span>ROCK PAPER SCISSORS</span>
+        <div class="title-icons-container">
+          <span class="title-icon">-</span>
+          <span class="title-icon">o</span>
+          <span class="title-icon">x</span>
+        </div>
+      </div>
+      <div class="battle-field">
+        <div id="game-over-overlay" class="game-overlay">
+          <div class="game-over-text">
+            <h2 id="game-over-message"></h2>
+            <button id="restart-button">RESTART</button>
+          </div>
+        </div>
+        <span class="user-result"><img src="img/rock.png" alt="" /></span>
+        <span class="cpu-result"><img src="img/rock.png" alt="" /></span>
+      </div>
+      <div class="scoreboard">
+        <div class="player-score">
+          <div class="title" id="player-score-title"><h1>Player One</h1></div>
+          <div class="score-container">
+            <span class="score-icon" id="user-1"></span>
+            <span class="score-icon" id="user-2"></span>
+            <span class="score-icon" id="user-3"></span>
+          </div>
+        </div>
+        <div class="overall-score">
+          <div class="title" id="overall-score-title"><h1>Record</h1></div>
+          <p id="result">Matches Won:</p>
+          <p id="score-board">Score:</p>
+          <a href="index.html"><button>MAIN MENU</button></a>
+        </div>
+        <div class="player-score">
+          <div class="title" id="player-score-title"><h1>CPU</h1></div>
+          <div class="score-container">
+            <span class="score-icon" id="cpu-1"></span>
+            <span class="score-icon" id="cpu-2"></span>
+            <span class="score-icon" id="cpu-3"></span>
+          </div>
+        </div>
+      </div>
+      <div class="option-field-container">
+        <div class="option-field-title"><h1>Choose Your Move</h1></div>
+        <div class="option-field">
+          <span class="option-image">
+            <img src="img/rock.png" alt="" />
+            <p>Rock</p>
+          </span>
+
+          <span class="option-image">
+            <img src="img/paper.png" alt="" />
+            <p>Paper</p>
+          </span>
+          <span class="option-image">
+            <img src="img/scissors.png" alt="" />
+            <p>Scissors</p>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <script src="rock_paper_scissors.js"></script>
+    <script src="extension.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Breaker</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="number-guessing-game">
+      <div class="guessing-game-title">
+        <div>
+          <h1>CODE BREAKER</h1>
+          <p>
+            Your Quest: Decode the 5-digit code in 15 tries, using only digits
+            1-5. After each guess, several clues will be given to guide your
+            next step.
+          </p>
+
+          <p id="guess-example">
+            Correct Code: 33333 <br />
+            Your Guess: 13334 <br />
+            Report: Correct-3, <br />
+            Too High-1, Too Low-0
+          </p>
+
+          <h3>Are you ready to crack the code? Let's begin!</h3>
+        </div>
+      </div>
+      <div class="guessing-game-container">
+        <div class="guess-field">
+          <p>Insert a number:</p>
+          <input type="text" id="1" maxlength="1" />
+          <input type="text" id="2" maxlength="1" />
+          <input type="text" id="3" maxlength="1" />
+          <input type="text" id="4" maxlength="1" />
+          <input type="text" id="5" maxlength="1" />
+        </div>
+        <div class="hint-field">
+          <span class="title" id="hint-field-title"><h1>REPORT</h1></span>
+          <div id="attempts">Attempt 0 of 15</div>
+          <br />
+          <div id="correct">Correct:</div>
+          <div id="too-high">Too High:</div>
+          <div id="too-low">Too Low:</div>
+          <br />
+
+          <div id="message"></div>
+        </div>
+
+        <button onclick="startGame()" id="confirm">CONFIRM</button>
+        <button onclick="slideOut('index.html')" class="slide-out-button">
+          MAIN MENU
+        </button>
+      </div>
+      <div id="history"></div>
+    </section>
+    <script src="number_guessing_game.js"></script>
+    <script src="extension.js"></script>
+  </body>
+</html>
